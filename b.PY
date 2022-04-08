@@ -79,6 +79,13 @@ while True:
 		robot_mouth.say(robot_brain)
 		robot_mouth.runAndWait()
 		break
+	elif "search" in you:
+		robot_brain = "What do you want to search for ?"
+		url = "https://google.com/search?q=" + robot_brain
+		webbrowser.get().open(url)
+		print("Robot: " + robot_brain)
+		robot_mouth.say(robot_brain)
+		robot_mouth.runAndWait()
 	else:
 	    robot_brain ="I'm fine thank you"
 	    
